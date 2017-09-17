@@ -1,0 +1,300 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	background-image: url("../images/concrete-texture.png");
+	color: #777;
+	position: relative;
+}
+
+h1, h2, h3 {
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	font-weight: bold;
+	padding: 20px 0;
+}
+
+h1 {
+	background-color: #1893ce;
+	font-size: 34px;
+	padding: 27px;
+	float: left;
+}
+
+h1 a {
+	color: #fff;
+}
+
+h2 {
+	color: #1893ce;
+	font-size: 28px;
+	border-bottom: 3px solid #ccc;
+	margin-bottom: 20px;
+}
+
+.social h2 {
+	font-size: 22px;
+	border-bottom: 1px solid #ccc;
+
+}
+
+a {
+	text-decoration: none;
+	color: #777;
+}
+
+a:hover,
+.button:hover {
+	color: #003333;
+}
+
+.selected {
+	color: #1893ce;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	min-height: 100%;
+	margin-bottom: -50px;
+}
+
+section {
+	width: 650px;
+	background-color: #fff;
+	display: inline-block;
+	padding: 0 35px;
+	margin: 0 35px 130px 0;
+	border: 1px solid #dddddd;
+}
+
+aside {
+ 	width: 270px;
+ 	background-color: #fff;
+ 	padding: 0 35px;
+ 	display: inline-block;
+    vertical-align: top;
+    border: 1px solid #dddddd;
+ }
+
+.menu ul li {
+	font-size: 18px;
+	display: inline-block;
+	padding: 0 25px;
+	margin: 44px 0;
+	border-right: 1px solid #eee;
+}
+
+.menu ul li:last-child,
+.social ul li:last-child {
+	padding-right: 0;
+	margin-right: 0;
+	border-right: none;
+}
+
+header {
+	background-color: #fff;
+	border-bottom: 2px solid #ccc;
+	height: 90px;
+	width: 100%;
+	margin-bottom: 44px;
+}
+
+header nav {
+	display: inline-block;
+	float: right;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.main img {
+	display: inline-block;
+	margin: 10px 24px 10px 0;
+	float: left;
+}
+
+p {
+	line-height: 2em;
+	font-size: 18px;
+	margin-bottom: 30px;	
+}
+
+.social ul li{
+	display: inline-block;
+	margin: 0 19px 20px 0;
+}
+
+.social ul li img{
+ 	display: inline-block;
+}
+
+
+/*  Portfolio Page Styles  */
+
+article {
+	display: inline-block;
+	width: 47%;
+	margin: 10px 0;
+	position: relative;
+}
+
+article:nth-child(even) {
+	margin-right: 5%;
+}
+
+article img {
+	width: 100%;
+}
+
+.gallery {
+	background-color: #1893ce;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+    position: absolute;
+    bottom: 25px;
+	left: 0;
+}
+
+
+/*  Contact Page Styles  */
+
+form {
+	margin: 30px 0;
+}
+
+label {
+	display: block;
+    padding: 8px 0;
+}
+
+input,
+textarea {
+	color: #ddd;
+	width: 100%;
+	margin-bottom: 10px;
+	border: 1px solid #ddd;
+	padding: 5px 10px;
+	resize: vertical;
+}
+
+.button {
+    background-color: #1893ce;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 116px;
+}
+
+footer {
+	background-color: #666;
+	text-align: center;
+	width: 100%;
+	height: 50px;
+	padding: 35px;
+	border-top: 8px solid #1893ce;
+}
+
+/*media queries
+*/
+
+@media screen and (max-width: 980px) {
+
+	.container {
+		width: 90%;
+	}
+
+	.main {
+		width: 56%;
+		margin-right: 2%;
+	}
+
+	.social {
+		width: 39%;
+		float: right;
+	}
+
+	#profile-pic {
+		float: none;
+		width: 100%;
+	}
+
+	article {
+		width: 100%;
+		margin-right: 0;
+	}
+
+}
+
+/*`768px` is about the width of a tablet
+*/
+
+@media screen and (max-width: 768px) {
+
+	.main {
+		width: 100%;
+    	margin-bottom: 30px;
+	}
+
+	#profile-pic {
+	    width: 50%;
+	    float: left;
+	}
+
+	.social {
+		float: none;
+		width: 100%;
+    	margin-bottom: 100px;
+	}
+
+	article {
+		width: 47%;
+	}
+
+}
+
+/*`640px` is about the width of a phone in landscape
+*/
+
+/*Make the position of the header `static`
+(the default positioning) when the screen is `640px` wide.*/
+@media screen and (max-width: 640px) {
+	
+	header {
+		height: 190px;
+		text-align: center;
+	}
+
+	header .container {
+		width: 100%;
+	}
+
+	h1 {
+		width: 100%;
+	}
+
+	.menu {
+		float: none;
+	}
+
+	#profile-pic {
+		float: none;
+		width: 100%;
+	}
+
+	article {
+		width: 100%;
+	}
+}
+
+
