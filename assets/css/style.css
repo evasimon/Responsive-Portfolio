@@ -8,6 +8,7 @@ body {
 	background-image: url("../images/concrete-texture.png");
 	color: #777;
 	position: relative;
+	min-height: 100%;
 }
 
 h1, h2, h3 {
@@ -57,8 +58,10 @@ a:hover,
 .container {
 	width: 960px;
 	margin: 0 auto;
-	min-height: 100%;
-	margin-bottom: -50px;
+}
+
+#main-content {
+	padding-bottom: 128px;
 }
 
 section {
@@ -203,6 +206,9 @@ footer {
 	height: 50px;
 	padding: 35px;
 	border-top: 8px solid #1893ce;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 }
 
 /*media queries
@@ -254,7 +260,6 @@ footer {
 	.social {
 		float: none;
 		width: 100%;
-    	margin-bottom: 100px;
 	}
 
 	article {
