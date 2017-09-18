@@ -74,13 +74,13 @@ section {
 }
 
 aside {
- 	width: 270px;
- 	background-color: #fff;
- 	padding: 0 35px;
- 	display: inline-block;
-    vertical-align: top;
-    border: 1px solid #dddddd;
- }
+	width: 270px;
+	background-color: #fff;
+	padding: 0 35px;
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid #dddddd;
+}
 
 .menu ul li {
 	font-size: 18px;
@@ -134,7 +134,7 @@ p {
 }
 
 .social ul li img{
- 	display: inline-block;
+	display: inline-block;
 }
 
 
@@ -160,8 +160,8 @@ article img {
 	width: 100%;
 	text-align: center;
 	color: #fff;
-    position: absolute;
-    bottom: 25px;
+	position: absolute;
+	bottom: 25px;
 	left: 0;
 }
 
@@ -174,7 +174,7 @@ form {
 
 label {
 	display: block;
-    padding: 8px 0;
+	padding: 8px 0;
 }
 
 input,
@@ -188,15 +188,15 @@ textarea {
 }
 
 .button {
-    background-color: #1893ce;
-    border: none;
-    color: white;
-    padding: 10px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    width: 116px;
+	background-color: #1893ce;
+	border: none;
+	color: white;
+	padding: 10px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	width: 116px;
 }
 
 footer {
@@ -211,8 +211,22 @@ footer {
 	left: 0;
 }
 
-/*media queries
-*/
+/* CSS styles inside the @keyframes rules */
+
+@keyframes example {
+	from {background-color: #fff;}
+	to {background-color: #eee;}
+}
+
+/* Binding animation to the element */
+
+.social {
+	background-color: #fff;
+	animation-name: example;
+	animation-duration: 5s;
+}
+
+/*  media queries  */
 
 @media screen and (max-width: 980px) {
 
@@ -242,19 +256,18 @@ footer {
 
 }
 
-/*`768px` is about the width of a tablet
-*/
+/*  `768px` is about the width of a tablet  */
 
 @media screen and (max-width: 768px) {
 
 	.main {
 		width: 100%;
-    	margin-bottom: 30px;
+		margin-bottom: 30px;
 	}
 
 	#profile-pic {
-	    width: 50%;
-	    float: left;
+		width: 50%;
+		float: left;
 	}
 
 	.social {
